@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 60px;
+    width: 300px;
+    border-radius: 6px;
+    background-color: #000;
+}
+.container #result{
+color:#fff;
+text-align: right;
+padding: 5px 10px;
+font-size: 1.5rem;
+}
+.container form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:5px;
+    padding: 5px;
+    align-items: center;
+    grid-template-areas:
+    "result result result result"
+    "ac plus-moins pourcent div"
+   "sept huit neuf product" 
+    "quatre cinq six moins"
+    "un deux trois plus"
+    "zero zero point egale";
+     
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#result{
+    grid-area: result;
+}
+.ac{
+    grid-area: ac;
+}
+.plus-moins{
+    grid-area: plus-moins;
+}
+.pourcent{
+    grid-area: pourcent;
+}
+.div{
+    grid-area: div;
+}
+.sept{
+    grid-area: sept;
+}
+.huit{
+    grid-area: huit;
+}
+.neuf{
+    grid-area:neuf;
+}
+.product{
+    grid-area:product;
+}
+.quatre{
+    grid-area: quatre;
+}
+.cinq{
+    grid-area:cinq;
+}
+.six{
+    grid-area: six;
+}
+.moins{
+    grid-area: moins;
+}
+.un{
+    grid-area: un;
+}
+.deux{
+    grid-area: deux;
+}
+.trois{
+    grid-area: trois;
+}
+.plus{
+    grid-area: plus;
+}
+.zero{
+    grid-area: zero;
+}
+.zero{
+    grid-area: zero;
+}
+.point{
+    grid-area: point;
+}
+.egale{
+    grid-area: egale;
+}
+.btn{
+    border-radius: 50%;
+    width: 40px;
+    border: none;
+color:#fff;
+background-color: #4a4a4a;
+    height: 40px;
+    font-size: 1.5rem;
+}
+#zero{
+    width: 100%;
+    border-radius: 90px;
+    padding-left: 15px;
+    text-align-last: left;
+}
+#plus, #egale, #moins, #product, #div {
+    background-color: orange;
+
+}
+#ac, #plus-moins{
+   background-color: rgb(158, 154, 154);
+   text-transform: uppercase;
+   color: black;
+}
